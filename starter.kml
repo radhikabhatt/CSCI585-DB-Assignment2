@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28034600000001,34.028371</coordinates></Point>
+</Placemark>
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28541489999998,34.02056150000001</coordinates></Point>
+</Placemark>
+<Placemark><name>Exp/Vermont </name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29119880000002,34.0180606</coordinates></Point>
+</Placemark>
+<Placemark><name>Vermont/Jeff</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29186199999998,34.02563500000001</coordinates></Point>
+</Placemark>
+<Placemark><name>Jeff/Fig</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28033399999998,34.022263</coordinates></Point>
+</Placemark>
+<Placemark><name>Fig/Expo</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.281792,34.01879100000001</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28717360000002,34.0211877</coordinates></Point>
+</Placemark>
+<Placemark><name>Social Work</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28248400000001,34.022333</coordinates></Point>
+</Placemark>
+<Placemark><name>Fig Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2816153,34.0198916</coordinates></Point>
+</Placemark>
+
+<Style id="transBluePoly">
+  <LineStyle>
+    <width>1.5</width>
+  </LineStyle>
+  <PolyStyle>
+    <color>7dff0000</color>
+  </PolyStyle>
+</Style>
+<Placemark>
+  <name>Convex hull</name>
+  <styleUrl>#transBluePoly</styleUrl>
+    <Polygon>
+      <extrude>1</extrude>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates> 
+            -118.2911988,34.0180606
+            -118.291862,34.025635
+            -118.280346,34.028371
+            -118.280334,34.022263
+            -118.281792,34.018791
+            -118.2911988,34.0180606
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+</Placemark>
+
+<Style id="transPurpleLineGreenPoly">
+  <LineStyle>
+    <color>7fff00ff</color>
+    <width>4</width>
+  </LineStyle>
+</Style>
+<Placemark>
+  <name>Absolute</name>
+  <visibility>1</visibility>
+  <description>Transparent purple line</description>
+  <styleUrl>#transPurpleLineGreenPoly</styleUrl>
+  <LineString>
+    <tessellate>1</tessellate>
+    
+    <coordinates>
+      -118.28034600000001,34.028371 -118.280334,34.022263
+      -118.28034600000001,34.028371 -118.282484,34.022333
+      -118.28034600000001,34.028371 -118.2816153,34.0198916
+    </coordinates>
+  </LineString>
+</Placemark>
+
+</Document></kml>
